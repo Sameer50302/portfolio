@@ -1,0 +1,714 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar 
+{
+  width: 10px;
+}
+::-webkit-scrollbar-track 
+{
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb 
+{
+  background: #6e93f7;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover 
+{
+  background: #4070f4;
+}
+/* Custom Scroll Bar CSS End */
+
+header
+{
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  font-family: 'Ubuntu', sans-serif;
+  background: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px ;
+}
+
+.logo a
+{
+  font-weight: 500;
+  font-size: 35px;
+  color: #4070f4;
+}
+
+.logo a:hover
+{
+  color: #fff;
+}
+
+.hamburger
+{
+  display: none;
+}
+
+.nav-bar ul
+{
+  display: flex;
+  margin: 0 18px;
+}
+
+.nav-bar ul li a
+{
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color:black;
+  padding: 15px ;
+  transition: 0.2s;
+  border-radius: 20px;
+  margin: 0 5px;
+}
+
+.nav-bar ul li a:hover
+{
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 800;
+  background: #4070f4;
+}
+
+/* home section styling */
+.home
+{
+  height: 100vh;
+  display: flex; 
+  background: url("images/backphoto.JPG")no-repeat center;   
+  background-size: cover;
+  background-position: 70%;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home .home-content
+{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home .text-one
+{
+  font-size: 28px;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.home .text-two
+{
+  color: #FFF;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .type
+{
+  color: navy;
+}
+
+.home .type2
+{
+  color: #44ff00;
+}
+
+.home .text-three
+{
+  font-size: 40px;
+  margin: 5px 0;
+  color: white;
+  font-weight: 500;
+}
+
+.home .text-four a
+{
+  font-size: 30px;
+  margin: 10px 6px;
+  color: white;
+  font-weight: 500;
+}
+
+.home .text-four .face:hover
+{
+  color: dodgerblue;
+}
+
+.home .text-four .link:hover
+{
+  color: dodgerblue;
+}
+
+.home .text-four .insta:hover
+{
+  color: red;
+}
+
+.home .text-four .git:hover
+{
+  color: black;
+}
+
+.home .button
+{
+  margin: 14px 0;
+}
+
+.home .button button
+{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #4070f4;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.home .button button:hover
+{
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}
+
+/* About Section Styling */
+section
+{
+  padding-top: 40px;
+}
+
+section .content
+{
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about .about-details
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .title
+{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+section .title span
+{
+  color: #0E2431;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+section .title span::before,
+section .title span::after
+{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #4070f4;
+  left: 0;
+  bottom: 0;
+}
+
+section .title span::after
+{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about .about-details .left
+{
+  width: 45%;
+}
+
+.about .left img
+{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.about-details .right
+{
+  width: 55%;
+}
+
+section  .topic
+{
+  color: #0E2431;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.about-details .right p
+{
+  text-align: justify;
+  color: #0E2431;
+}
+
+section .button
+{
+  margin: 16px 0;
+}
+
+section .button button
+{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #4070f4;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+section .button button:hover
+{
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}
+
+/* My Skills CSS */
+.skills
+{
+  background: #F0F8FF;
+}
+
+.skills .content
+{
+  padding: 40px 0;
+}
+
+.skills .skills-details
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills-details .text
+{
+  width: 50%;
+}
+
+.skills-details p
+{
+  color: #0E2431;
+  text-align: justify;
+}
+
+.skills .skills-details .experience
+{
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.skills-details .experience .num
+{
+  color: #0E2431;
+  font-size: 80px;
+}
+
+.skills-details .experience .exp
+{
+  color: #0E2431;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 6px;
+}
+
+.skills-details .boxes
+{
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills-details .box
+{
+  width: calc(100% / 2 - 20px);
+  margin: 20px 0;
+}
+
+.skills-details .boxes .topic
+{
+  font-size: 20px;
+  color: #4070f4;
+}
+
+.skills-details .boxes .per
+{
+  font-size: 60px;
+  color: #4070f4;
+}
+
+.contact
+{
+  font-family: 'Poppins', sans-serif;
+  padding-bottom:15px;
+}
+
+.contact .contact-content
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact .contact-content .column
+{
+  width: calc(50% - 30px);
+  margin:auto;
+}
+
+.contact .contact-content .text
+{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact .contact-content .left p
+{
+  text-align: justify;
+}
+
+.contact .contact-content .left .icons
+{
+  margin: 10px 0;
+}
+
+.contact .contact-content .row
+{
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.contact .contact-content .row .info
+{
+  margin-left: 30px;
+}
+
+.contact .contact-content .row i
+{
+  font-size: 25px;
+  color: crimson;
+}
+
+.contact .contact-content .info .head
+{
+  font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title
+{
+  color: #333;
+}
+
+.contact .right form .fields
+{
+  display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;  
+}
+
+.contact .right form .textarea{
+  height: 80px;
+  width: 100%;
+}
+
+.contact .right form .name{
+  margin-right: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+  border-color: #b3b3b3;
+}
+
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+
+.contact .right form .button-area{
+  display: flex;
+  align-items: center;
+}
+
+.right form .button-area button
+{
+  color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: crimson;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.right form .button-area button:hover
+{
+  color: crimson;
+  background: none;
+}
+
+/* Footer CSS */
+footer
+{
+  background: #4070f4;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer .text span
+{
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+
+footer .text span a
+{
+  font-weight: 500;
+  color: #FFF;
+}
+
+footer .text span a:hover
+{
+  color: black;
+  font-weight: 700;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1190px) 
+{
+  section .content
+  {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1000px) 
+{
+  .about .about-details
+  {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left
+  {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-details .right
+  {
+    width: 90%;
+    margin: 40px 0;
+  }
+}
+
+@media (max-width: 900px) 
+{
+  .about .left img
+  {
+    height: 350px;
+    width: 350px;
+  }
+
+  .hamburger
+  {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .line
+  {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 6px 0;
+  }
+
+  .nav-bar
+  {
+    height: 0px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    transition: 0.5s;
+    background: rgba(0,0,0,0.9);
+    overflow: hidden;  
+  }
+
+  .nav-bar.active
+  {
+    height: 280px;
+  }
+
+  .nav-bar ul
+  {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;      
+  }
+
+  .nav-bar.active ul
+  {
+    opacity: 1;
+  }
+
+  .nav-bar ul li a
+  {
+    margin-bottom: 12px;
+    color: whitesmoke;
+  }
+}
+
+@media (max-width: 750px) 
+{
+  .home .text-two
+  {
+    font-size: 65px;
+  }
+
+  .home .text-three
+  {
+    font-size: 35px;
+  }
+
+  .skills .skills-details
+  {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .skills-details .text
+  {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .skills-details .boxes
+  {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .contact .text
+  {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px)
+{
+  .home .text-two
+  {
+    font-size: 55px;
+  }
+
+  .home .text-three
+  {
+    font-size: 33px;
+  }
+
+  .skills-details .boxes .per
+  {
+    font-size: 50px;
+    color: #4070f4;
+  }
+
+ .contact .right form .fields
+ {
+    flex-direction: column;
+ }
+
+ .contact .right form .name,
+  .contact .right form .email
+  {
+    margin: 0;
+  }   
+}
