@@ -50,7 +50,7 @@ header
 {
   font-weight: 500;
   font-size: 35px;
-  color: #4070f4;
+  color: #052273;
 }
 
 .logo a:hover
@@ -58,9 +58,50 @@ header
   color: #fff;
 }
 
-.hamburger
-{
+.hamburger {
+  width: 30px;
+  height: 21px;
+  position: relative;
   display: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger .line {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: black;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger .line:nth-child(1) {
+  top: 0;
+}
+
+.hamburger .line:nth-child(2) {
+  top: 9px;
+}
+
+.hamburger .line:nth-child(3) {
+  top: 18px;
+}
+
+/* Cross effect */
+.hamburger.active .line:nth-child(1) {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.hamburger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 9px;
 }
 
 .nav-bar ul
@@ -139,7 +180,7 @@ header
 .home .text-three
 {
   font-size: 40px;
-  margin: 5px 0;
+  margin-bottom: 10px ;
   color: white;
   font-weight: 500;
 }
@@ -147,7 +188,9 @@ header
 .home .text-four a
 {
   font-size: 30px;
+ 
   margin: 10px 6px;
+ 
   color: white;
   font-weight: 500;
 }

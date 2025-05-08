@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- Icon and font library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
@@ -11,10 +12,11 @@
     <header>
       <div class="logo"><a href="#">Portfolio</a></div>
       <div class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
       </div>
+      
       <nav class="nav-bar">
           <ul>
               <li>
@@ -27,18 +29,30 @@
                   <a href="#skills">Skills</a>
               </li>
               <li>
+                <a href="#education">Education</a>
+              </li>
+              <li>
+                <a href="#about">Work</a>
+              </li>
+              <li>
                   <a href="#contact">Contact</a>
               </li>
           </ul>
       </nav>                
     </header>
 
+    <!-- Education Section Start -->
+
+
+
+
+
     <!-- Home Section Start -->
     <section class="home" id="home">
       <div class="home-content">
         <div class="text">
           <div class="text-one">Hello,</div>
-          <div class="text-two">I'm <span class="type"></span></div>
+          <div class="text-two">I'm <span class="type">Sameer</span></div>
           <div class="text-three">A <span class="type2"></span></div>
           <div>
           <div class="text-four">
@@ -71,7 +85,9 @@
               I have done BCA from JIMS,VK in 2023.<br>
             </p>
             <div class="button">
-              <button onclick="window.location.href='cv.html' ">View CV</button>
+              <!-- <button onclick="window.location.href='cv.html' ">View CV</button> -->
+               <button onclick="window.location.href='\SameerCV.png'">View CV</button>
+
             </div>
           </div>
         </div>
@@ -176,29 +192,9 @@
         <span>Designed and Developed By <a href="#">Sameer</a></span>
       </div>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-      var typed=new Typed(".type",{
-        strings: ["Sameer"],
-        typeSpeed:100,
-        backSpeed:100,
-        loop:true
-      })
-      
-      var typed2=new Typed(".type2",{
-        strings: ["Web Developer","Programmer"],
-        typeSpeed:80,
-        backSpeed:70,
-        loop:true
-      })
 
-      hamburger = document.querySelector(".hamburger");
-      hamburger.onclick = function(){
-          navBar = document.querySelector(".nav-bar");
-          navBar.classList.toggle("active");
-      }
-    </script>
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+  
   </body>
 </html>
-
