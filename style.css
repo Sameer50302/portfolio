@@ -332,6 +332,8 @@ section  .topic
 section .button
 {
   margin: 16px 0;
+  display: flex;
+  gap: 20px;
 }
 
 section .button button
@@ -353,6 +355,7 @@ section .button button:hover
   border-color: #4070f4;
   background-color: #fff;
   color: #4070f4;
+  font-weight: 700;
 }
 
 /* My Skills CSS */
