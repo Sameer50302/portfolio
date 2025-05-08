@@ -26,3 +26,5 @@
     hamburger.classList.remove("active");  // Resets the hamburger icon
     });
     });
+
+

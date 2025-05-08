@@ -244,7 +244,7 @@ header
 /* About Section Styling */
 section
 {
-  padding-top: 40px;
+  padding-top: 55px;
 }
 
 section .content
@@ -320,7 +320,7 @@ section  .topic
   color: #0E2431;
   font-size: 25px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .about-details .right p
@@ -359,7 +359,55 @@ section .button button:hover
 }
 
 /* My Skills CSS */
-.skills
+
+.skills {
+  padding: 50px 20px;
+  background-color: #F0F8FF;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-item i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.skill-item span {
+  font-size: 1rem;
+  color: #333;
+}
+
+
+
+/* .skills
 {
   background: #F0F8FF;
 }
@@ -433,7 +481,17 @@ section .button button:hover
 {
   font-size: 60px;
   color: #4070f4;
-}
+} */
+
+
+
+
+
+
+
+
+
+
 
 .contact
 {
