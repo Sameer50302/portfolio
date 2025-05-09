@@ -14,7 +14,7 @@
 // Toggle the menu when hamburger is clicked
     hamburger.onclick = function() 
     {
-        hamburger.classList.toggle("active"); // 👈 This line adds the cross effect
+        hamburger.classList.toggle("active"); //This line adds the cross effect
         navBar.classList.toggle("active"); // Toggles the visibility of the nav menu
     }
 
@@ -32,4 +32,23 @@
     card.addEventListener('click', () => {
         card.classList.toggle('expanded');
     });
-});
+    });
+
+// Show button after scrolling down
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+    };
+
+    // Smooth scroll to top
+    scrollToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+    });
