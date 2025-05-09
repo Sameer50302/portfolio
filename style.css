@@ -667,17 +667,6 @@ section .button button:hover
   background-color: #052273;
 }
 
-@media (max-width: 768px) {
-  .contact-container {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .contact-form,
-  .contact-info {
-    width: 100%;
-  }
-}
 
 
 
@@ -754,22 +743,6 @@ section .button button:hover
   color: #ccc;
   border-top: 1px solid #3b4a82;
   padding-top: 15px;
-}
-
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-left, .footer-right {
-    width: 100%;
-  }
-
-  .social-icons a {
-    margin: 0 10px;
-  }
 }
 
 
@@ -882,6 +855,36 @@ section .button button:hover
     margin-bottom: 12px;
     color: whitesmoke;
   }
+}
+/* contact responsive and footer*/
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%;
+  }
+
+
+   .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left, .footer-right {
+    width: 100%;
+  }
+
+  .social-icons a {
+    margin: 0 10px;
+  }
+
+
+
 }
 
 @media (max-width: 750px) 
