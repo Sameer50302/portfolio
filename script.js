@@ -35,20 +35,41 @@
     });
 
 // Show button after scrolling down
-    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    // const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-    window.onscroll = function () {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        scrollToTopBtn.style.display = "block";
-    } else {
-        scrollToTopBtn.style.display = "none";
-    }
-    };
+    // window.onscroll = function () {
+    // if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    //     scrollToTopBtn.style.display = "block";
+    // } else {
+    //     scrollToTopBtn.style.display = "none";
+    // }
+    // };
 
-    // Smooth scroll to top
-    scrollToTopBtn.addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-    });
+    // // Smooth scroll to top
+    // scrollToTopBtn.addEventListener("click", function () {
+    // window.scrollTo({
+    //     top: 0,
+    //     behavior: "smooth"
+    // });
+    // });
+
+    
+    // Show button after scrolling down
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+window.onscroll = function () {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+};
+
+// Smooth scroll to top
+scrollToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+  this.blur(); // Remove focus after click to prevent active styling
+});

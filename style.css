@@ -129,6 +129,9 @@ header
   font-weight: 800;
   background: #4070f4;
 }
+
+
+/* top button */
 #scrollToTopBtn {
   position: fixed;
   bottom: 30px;
