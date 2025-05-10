@@ -474,7 +474,7 @@ section .button button:hover
 }
 
 .education-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-50px);
 }
 
 .education-img {
