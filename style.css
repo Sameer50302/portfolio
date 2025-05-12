@@ -170,7 +170,7 @@ header nav a.active {
 {
   height: 100vh;
   display: flex; 
-  background: url("images/backphoto.JPG")no-repeat center;   
+  background: url("images/background.JPG")no-repeat center;   
   background-size: cover;
   background-position: 70%;
   background-attachment: fixed;
@@ -368,7 +368,7 @@ section  .topic
   color: #0E2431;
   font-size: 25px;
   font-weight: 500;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 
 .about-details .right p
@@ -389,7 +389,7 @@ section .button button
   outline: none;
   padding: 8px 16px;
   border-radius: 4px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
   background: #4070f4;
   color: #fff;
@@ -442,7 +442,7 @@ section .button button:hover
 }
 
 .skill-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-20px);
 }
 
 .skill-item i {
@@ -518,8 +518,8 @@ section .button button:hover
 }
 
 
-/* Work Section */
-#work {
+/* Project Section */
+#project {
   /* padding: 60px 20px; */
   padding-top: 60px;
   padding-left: 20px;
@@ -536,7 +536,7 @@ section .button button:hover
   color: #333;
 }
 
-.work-container {
+.project-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
