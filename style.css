@@ -27,8 +27,11 @@
 {
   background: #4070f4;
 }
-/* Custom Scroll Bar CSS End */
+* {
+  scrollbar-color: #6e93f7 #f1f1f1;
+}
 
+/* nav and humburger */
 header
 {
   position: fixed;
@@ -42,20 +45,21 @@ header
   justify-content: space-between;
   align-items: center;
   padding: 0 50px ;
-  /* this is added now ISSUE */
-  z-index: 1000; /* Ensure it stays on top */
+  z-index: 1000;
 }
 
 .logo a
 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 35px;
+  font-style: italic;
   color: #052273;
 }
 
 .logo a:hover
 {
   color: #fff;
+  font-weight: 800;
 }
 
 .hamburger {
@@ -64,7 +68,7 @@ header
   position: relative;
   display: none;
   cursor: pointer;
-  z-index: 1001;  /* Above nav-bar for clickable icon */
+  z-index: 1001;  
 }
 
 .hamburger .line {
@@ -77,29 +81,35 @@ header
   transition: all 0.3s ease;
 }
 
-.hamburger .line:nth-child(1) {
+.hamburger .line:nth-child(1) 
+{
   top: 0;
 }
 
-.hamburger .line:nth-child(2) {
+.hamburger .line:nth-child(2) 
+{
   top: 9px;
 }
 
-.hamburger .line:nth-child(3) {
+.hamburger .line:nth-child(3) 
+{
   top: 18px;
 }
 
 /* Cross effect */
-.hamburger.active .line:nth-child(1) {
+.hamburger.active .line:nth-child(1) 
+{
   transform: rotate(45deg);
   top: 9px;
 }
 
-.hamburger.active .line:nth-child(2) {
+.hamburger.active .line:nth-child(2) 
+{
   opacity: 0;
 }
 
-.hamburger.active .line:nth-child(3) {
+.hamburger.active .line:nth-child(3) 
+{
   transform: rotate(-45deg);
   top: 9px;
 }
@@ -129,12 +139,6 @@ header
   font-weight: 800;
   background: #4070f4;
 }
-
-/* .navbar a.active,
-header nav a.active {
-  color: purple; 
-} */
-
 
 .nav-bar ul li a.active {
   background-color: #4070f4;
@@ -253,53 +257,14 @@ header nav a.active {
   color: black;
 }
 
-.home .button
-{
-  margin: 14px 0;
-}
-
-.home .button button
-{
-  outline: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 25px;
-  font-weight: 400;
-  background: #4070f4;
-  color: #fff;
-  cursor: pointer;
-  border: 2px solid transparent;
-  transition: all 0.4s ease;
-}
-
-.home .button button:hover
-{
-  border-color: #4070f4;
-  background-color: #fff;
-  color: #4070f4;
-}
-
-/* About Section Styling */
-section
-{
-  /* NOEW added */
-    /* padding-top: 55px; */
-  padding-top: 40px;
-  background-color: white;
-}
-
+/* Title css will apply on all section  */
 section .content
 {
   width: 80%;
   margin: 40px auto;
   font-family: 'Poppins', sans-serif;
-}
-
-.about .about-details
-{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* no need of this  */
+  background-color: darkorange;
 }
 
 section .title
@@ -307,17 +272,10 @@ section .title
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
-  /* NOEW ADDED */
-   /* color: #4070f4;
-  font-size: 30px;
-  font-weight: 600;
-  padding-bottom: 8px; */
-
 }
 
 section .title span
 {
-  /* color: #0E2431; */
   color: #052273;
   font-size: 30px;
   font-weight: 600;
@@ -345,6 +303,33 @@ section .title span::after
   transform: translateX(-50%);
 }
 
+section .topic
+{
+  color: #0E2431;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+
+
+
+/* ------------ABOUT SECTION------------- */
+.about
+{
+  padding-top: 40px;
+  padding-bottom: 1px;
+  /* background-color: white; */
+  background-color: #44ff00;
+}
+
+.about .about-details
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .about .about-details .left
 {
   width: 45%;
@@ -352,7 +337,7 @@ section .title span::after
 
 .about .left img
 {
-  height: 400px;
+  height: 500px;
   width: 400px;
   object-fit: cover;
   border-radius: 12px;
@@ -363,42 +348,29 @@ section .title span::after
   width: 55%;
 }
 
-section  .topic
-{
-  color: #0E2431;
-  font-size: 25px;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
 .about-details .right p
 {
   text-align: justify;
   color: #0E2431;
 }
 
-section .button
-{
-  margin: 16px 0;
-  display: flex;
-  gap: 20px;
-}
 
-section .button button
+.about .button button
 {
   outline: none;
+  margin: 16px 0;
   padding: 8px 16px;
   border-radius: 4px;
   font-size: 20px;
   font-weight: 400;
   background: #4070f4;
   color: #fff;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   cursor: pointer;
   transition: all 0.4s ease;
 }
 
-section .button button:hover
+.about .button button:hover
 {
   border-color: #4070f4;
   background-color: #fff;
@@ -406,19 +378,20 @@ section .button button:hover
   font-weight: 700;
 }
 
+
+
+
+
+
 /* My Skills CSS */
 .skills {
-  padding: 45px 20px;  
-  background-color: #F0F8FF;
+  padding: 40px 20px;  
+  /* background-color: #F0F8FF; this */
   /* background-color: #b7c6ef; */
+  background-color: blue;
   text-align: center;
 }
 
-.section-title {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  color: #333;
-}
 
 .skills-grid {
   display: grid;
@@ -426,6 +399,7 @@ section .button button:hover
   gap: 30px;
   max-width: 1000px;
   margin: 0 auto;
+  margin-top: 15px;
 }
 
 .skill-item {
@@ -457,13 +431,20 @@ section .button button:hover
 }
 
 
+
+
+
+
+
+
 /* Education Section */
 .education {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 75px;
     text-align: center;
+    background-color: darkgreen;
 }
 
 /* Education Cards Wrapper */
@@ -518,22 +499,19 @@ section .button button:hover
 }
 
 
+
+
 /* Project Section */
-#project {
+.project {
   /* padding: 60px 20px; */
-  padding-top: 60px;
+  padding-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 2px;
   /* background-color: #f9f9f9; */
-  background-color: #F0F8FF;
+  /* background-color: #F0F8FF; this */
+  background-color: brown;
   text-align: center;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #333;
 }
 
 .project-container {
@@ -544,7 +522,7 @@ section .button button:hover
 }
 
 .project-card {
-  background: #fff;
+  /* background: #fff; */
   border-radius: 16px;
   width: 320px;
   overflow: hidden;
@@ -599,18 +577,41 @@ section .button button:hover
   text-decoration: none;
   border-radius: 8px;
   transition: background-color 0.3s ease;
+  font-weight: 500;
 }
 
 .project-btn:hover {
-  background-color: #005ecb;
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+  font-weight: 600;
+  border: 3px solid ;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Section */
 .contact {
   /* background: #f4f8ff; */
-  background: white;
-  padding: 60px 20px;
-  padding-bottom: inherit;
+  /* background: white; this */
+  background-color: darkviolet;
+  padding: 40px 20px;
+  padding-bottom: 1px;
   font-family: 'Poppins', sans-serif;
   
 }
@@ -637,7 +638,8 @@ section .button button:hover
 }
 
 .contact-info p {
-  color: #333;
+  /* color: #333; */
+  color: #44ff00;
   margin-bottom: 25px;
   font-size: 1rem;
   line-height: 1.6;
@@ -696,13 +698,16 @@ section .button button:hover
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-weight: 500;
 }
 
 .contact-form button:hover {
-  background-color: #052273;
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+  font-weight: 600;
+  border: 3px solid ;
 }
-
-
 
 
 /* Footer CSS */
@@ -744,8 +749,6 @@ section .button button:hover
   color: #60a5fa;
 }
 
-
-
 .footer-right h4 {
   font-size: 1.2rem;
   margin-bottom: 10px;
@@ -770,7 +773,6 @@ section .button button:hover
   color: #60a5fa;
 }
 
-
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
@@ -778,221 +780,4 @@ section .button button:hover
   color: #ccc;
   border-top: 1px solid #3b4a82;
   padding-top: 15px;
-}
-
-
-/* Responsive Media Query */
-@media (max-width: 1190px) 
-{
-  section .content
-  {
-    width: 85%;
-  }
-}
-
-@media (max-width: 1000px) 
-{
-  .about .about-details
-  {
-    justify-content: center;
-    flex-direction: column;
-  }
-  .about .about-details .left
-  {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  .about-details .right
-  {
-    width: 90%;
-    margin: 40px 0;
-  }
-}
-
-@media (max-width: 900px) 
-{
-  .about .left img
-  {
-    height: 350px;
-    width: 350px;
-  }
-
-  .hamburger
-  {
-    display: block;
-    cursor: pointer;
-  }
-
-  .hamburger .line
-  {
-    width: 30px;
-    height: 3px;
-    background: black;
-    margin: 6px 0;
-  }
-/* dont know why? */
-  /* .nav-bar
-  {
-    height: 0px;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    transition: 0.5s;
-    background: rgba(0,0,0,0.9);
-    overflow: hidden;  
-  } */
-
-
-    .nav-bar {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100vw;
-    max-height: 0;              /* Start hidden */
-    overflow: hidden;
-    background: rgba(0,0,0,0.9);
-    /* transition: max-height 0.20s ease; */
-    transition: 0.5s;
-    /* z-index: 1005; */
-    z-index: 999; /* Just below header */
-
-  }
-
-    .nav-bar.active {
-    max-height: 100vh;         /* Show on active */
-  }
-
-  /* .nav-bar.active
-  {
-    height: 280px;
-  } */
-
-  .nav-bar ul
-  {
-    display: block;
-    width: fit-content;
-    margin: 10px auto 0 auto;
-    text-align: center;
-    transition: 0.5s;
-    opacity: 0;      
-  }
-
-  .nav-bar.active ul
-  {
-    opacity: 1;
-  }
-
-  .nav-bar ul li a
-  {
-    margin-bottom: 12px;
-    color: whitesmoke;
-  }
-}
-/* contact responsive and footer*/
-@media (max-width: 768px) {
-  .contact-container {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .contact-form,
-  .contact-info {
-    width: 100%;
-  }
-
-
-   .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-left, .footer-right {
-    width: 100%;
-  }
-
-  .social-icons a {
-    margin: 0 10px;
-  }
-
-
-
-}
-
-@media (max-width: 750px) 
-{
-  .home .text-two
-  {
-    font-size: 65px;
-  }
-
-  .home .text-three
-  {
-    font-size: 35px;
-  }
-
-  .skills .skills-details
-  {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .skills-details .text
-  {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-
-  .skills-details .boxes
-  {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .contact .text
-  {
-    width: 100%;
-  }
-}
-
-@media (max-width: 500px)
-{
-  .home .text-two
-  {
-    font-size: 55px;
-  }
-
-  .home .text-three
-  {
-    font-size: 33px;
-  }
-
-  .skills-details .boxes .per
-  {
-    font-size: 50px;
-    color: #4070f4;
-  }
-
- .contact .right form .fields
- {
-    flex-direction: column;
- }
-
- .contact .right form .name,
-  .contact .right form .email
-  {
-    margin: 0;
-  }   
-}
-
-@media screen and (max-device-width: 430px) {
-  .home {
-    background-attachment: scroll !important;
-    min-height: 100dvh; /* 100dvh is more accurate on mobile now */
-  }
 }
