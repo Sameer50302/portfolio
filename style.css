@@ -56,11 +56,19 @@ header
   color: #052273;
 }
 
+/* .logo a:hover
+{
+  color: #fff;
+  font-weight: 800;
+} */
+
+.logo a:active,
 .logo a:hover
 {
   color: #fff;
   font-weight: 800;
 }
+
 
 .hamburger {
   width: 30px;
@@ -164,7 +172,10 @@ header
   transition: background 0.3s, transform 0.3s;
 }
 
-#scrollToTopBtn:hover {
+#scrollToTopBtn:hover,
+#scrollToTopBtn:active
+
+{
   background-color: green;
   transform: scale(1.1);
 }
@@ -370,7 +381,8 @@ section .topic
   transition: all 0.4s ease;
 }
 
-.about .button button:hover
+.about .button button:hover,
+.about .button button:active
 {
   border-color: #4070f4;
   background-color: #fff;
@@ -782,11 +794,6 @@ section .topic
   border-top: 1px solid #3b4a82;
   padding-top: 15px;
 }
-
-
-
-
-
 
 
 
