@@ -888,8 +888,8 @@ section .topic
   .about .left img {
     /* height: 280px; */
     /* width:280px; */
-    height: 306px;
-    width: 270px;
+    height: 360px;
+    width: 300px;
     object-fit: cover;
   }
   .skills-details .boxes .per {

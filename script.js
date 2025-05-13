@@ -80,14 +80,20 @@ if (window.location.hash === "#contact") {
 }
 
 
+// function redirectAfterSubmit() {
+// try {
+//   setTimeout(() => {
+//     window.location.href = "thankyou.html";
+//   }, 100);
+// } catch (error) {
+//   console.error("Submission Error", error);
+
+// }
+// }
+
 function redirectAfterSubmit() {
-try {
   setTimeout(() => {
     window.location.href = "thankyou.html";
   }, 100);
-} catch (error) {
-  console.error("Submission Error", error);
-
-}
 }
 
