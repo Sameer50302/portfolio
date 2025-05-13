@@ -723,8 +723,9 @@ section .topic
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
-  max-width: 1100px;
+  max-width: 1250px;
   margin: 0 auto;
+  padding: 0px 40px;
 }
 
 .footer-left h3 {
@@ -780,4 +781,186 @@ section .topic
   color: #ccc;
   border-top: 1px solid #3b4a82;
   padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== Max Width: 1200px ========== */
+@media (max-width: 1200px) {
+  section .content {
+    width: 85%;
+  }
+
+   .about .about-details {
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+/* ========== Max Width: 992px ========== */
+@media (max-width: 992px) {
+  .about .about-details {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .about .about-details .left,
+  .about-details .right {
+    width: 90%;
+    text-align: center;
+  }
+
+  .about .left img {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+  }
+
+  /* Hamburger menu visible */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 6px 0;
+  }
+
+  .nav-bar {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    max-height: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    transition: max-height 0.5s ease;
+  }
+
+  .nav-bar.active {
+    max-height: 100vh;
+  }
+
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+
+  .nav-bar ul li a {
+    margin-bottom: 12px;
+    color: whitesmoke;
+  }
+}
+
+/* ========== Max Width: 768px (Tablets) ========== */
+@media (max-width: 768px) {
+  .home .text-two {
+    font-size: 65px;
+  }
+
+  .home .text-three {
+    font-size: 35px;
+  }
+
+  .skills .skills-details {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills-details .text,
+  .skills-details .boxes {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-form,
+  .contact-info,
+  .contact .text {
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
+
+  .social-icons a {
+    margin: 0 10px;
+  }
+}
+
+/* ========== Max Width: 576px (Phones) ========== */
+@media (max-width: 576px) {
+  .home .text-two {
+    font-size: 55px;
+  }
+
+  .home .text-three {
+    font-size: 33px;
+  }
+
+  .skills-details .boxes .per {
+    font-size: 50px;
+    color: #4070f4;
+  }
+
+  .contact .right form .fields {
+    flex-direction: column;
+  }
+
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
+
+  .footer-container {
+    padding: 15px 15px;
+  }
+}
+
+/* ========== Max Device Width: 430px ========== */
+@media screen and (max-device-width: 430px) {
+  .home {
+    background-attachment: scroll !important;
+    min-height: 100dvh;
+  }
 }
