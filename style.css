@@ -762,8 +762,10 @@ section .topic
   }
 
   .about .left img {
-    height: 350px;
-    width: 350px;
+    /* height: 350px;
+    width: 350px; */
+    height: 409px;
+    width: 427px;
     object-fit: cover;
   }
 
@@ -827,7 +829,7 @@ section .topic
 
   .about .left img {
     height: 350px;
-    width:fit-content;
+    width:350px;
     object-fit: cover;
   }
 
@@ -882,6 +884,14 @@ section .topic
     font-size: 33px;
   }
 
+  /* added */
+  .about .left img {
+    /* height: 280px; */
+    /* width:280px; */
+    height: 306px;
+    width: 270px;
+    object-fit: cover;
+  }
   .skills-details .boxes .per {
     font-size: 50px;
     color: #4070f4;
