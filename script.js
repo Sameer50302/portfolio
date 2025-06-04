@@ -97,3 +97,9 @@ function redirectAfterSubmit() {
   }, 100);
 }
 
+ function toggleProjects() {
+    document.querySelectorAll('.project-card.hidden').forEach(card => {
+      card.classList.remove('hidden');
+    });
+    document.querySelector('.see-more-btn').style.display = 'none';
+  }

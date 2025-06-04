@@ -367,8 +367,7 @@ section .topic
   transition: all 0.4s ease;
 }
 
-.about .button button:hover,
-.about .button button:active
+.about .button button:hover
 {
   border-color: #4070f4;
   background-color: #fff;
@@ -482,83 +481,130 @@ section .topic
     font-weight: 700;
 }
 
-/* Project Section */
-.project {
-  padding: 40px 20px 2px;
-  background-color: #F0F8FF;
-  text-align: center;
-}
 
-.project-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+.projects-section {
+  padding: 50px 20px;
+  background-color: #F0F8FF;
+  font-family: 'Courier New', monospace;
+
 }
 
 .project-card {
-  background: #fff;
-  border-radius: 16px;
-  width: 320px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  cursor: pointer;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px auto;
+  max-width: 1000px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-  /* transform: translateY(-10px) scale(1.03); */
-  transform: scale(1.10) rotate(-3deg);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
-.project-card:active {
-  transform: scale(0.98);
-}
-
-.project-img {
-  width: 100%;
-  height: 150px;
+.project-card img {
+  width: 45%;
+  height: auto;
   object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
 }
 
-.project-content {
+.project-card img:hover {
+  transform: scale(1.05);
+}
+
+.project-info {
+  width: 50%;
   padding: 20px;
-  text-align: left;
 }
 
-.project-content h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+.project-info h3 {
+  font-size: 24px;
+  color: #0033cc;
+  text-transform: uppercase;
+}
+
+.project-info p {
+  margin: 15px 0;
   color: #333;
+  text-align: justify;
 }
 
-.project-content p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.project-btn {
+.project-info a {
   display: inline-block;
-  padding: 8px 18px;
-  background-color: #0077ff;
-  color: #fff;
+  padding: 10px 20px;
+  background: #ff4d4d;
+  color: white;
   text-decoration: none;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
-  font-weight: 500;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
-.project-btn:hover {
-  border-color: #4070f4;
+.project-info a:hover {
+  background: #e60000;
+}
+
+.card-left {
+  flex-direction: row;
+}
+
+.card-right {
+  flex-direction: row-reverse;
+}
+
+.hidden {
+  display: none;
+}
+
+.see-more-btn {
+  margin: 40px auto 0;
+  padding: 12px 30px;
+  display: block;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.see-more-btn:hover {
   background-color: #fff;
   color: #4070f4;
-  font-weight: 600;
-  border: 3px solid ;
+  font-weight: 700;
+  border: 2px solid ;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .project-card img, 
+  .project-info {
+    width: 100%;
+  }
+
+  .project-info {
+    padding: 15px 0;
+  }
+
+  .project-card img {
+    margin-bottom: 15px;
+  }
+}
+
 
 /* Contact Section */
 .contact {
@@ -638,7 +684,8 @@ section .topic
   border-color: #4070f4;
 }
 
-.contact-form button {
+/* .contact-form button {
+  
   background-color: #4070f4;
   color: white;
   padding: 12px 24px;
@@ -655,8 +702,32 @@ section .topic
   background-color: #fff;
   color: #4070f4;
   font-weight: 600;
-  border: 3px solid ;
+  border: 2px solid ;
+} */
+
+.contact-form button
+{
+  outline: none;
+  margin: 16px 0;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 400;
+  background: #4070f4;
+  color: #fff;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
 }
+
+.contact-form button:hover
+{
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+  font-weight: 600;
+}
+
 
 
 /* Footer CSS */
