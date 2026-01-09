@@ -1,6 +1,6 @@
 // Typed.js Initialization
 var typed2 = new Typed(".type2", {
-  strings: ["Web Developer", "Software Developer", "Programmer"],
+  strings: ["Web Developer", "Wordpress Developer", "Programmer"],
   typeSpeed: 80,
   backSpeed: 70,
   loop: true
